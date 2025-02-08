@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-10-26 08:02:55 "/>
+        <attribute name="created" value="QVNVUztBU1VTLVBDOzIwMjAtMTAtMjY7IjA1OjI5OjU1ICI7MjAxOA=="/>
+        <attribute name="edited" value="QVNVUztBU1VTLVBDOzIwMjAtMTAtMjY7IjA4OjAyOjU1ICI7MjsyMTIx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="keliling" type="Real" array="False" size=""/>
+            <declare name="luas" type="Real" array="False" size=""/>
+            <declare name="phi" type="Real" array="False" size=""/>
+            <assign variable="phi" expression="3.14"/>
+            <declare name="r" type="Real" array="False" size=""/>
+            <output expression="&quot;Masukan jari jari&quot;" newline="True"/>
+            <input variable="r"/>
+            <assign variable="keliling" expression="2*3.14*r"/>
+            <assign variable="luas" expression="3.14*r*r"/>
+            <output expression="&quot;keliling lingkaran: &quot; &amp; keliling" newline="True"/>
+            <output expression="&quot;luas lingkaran: &quot;&amp; luas" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

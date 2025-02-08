@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-17 10:22:06 "/>
+        <attribute name="created" value="QVNVUztBU1VTLVBDOzIwMjAtMTEtMTc7IjA5OjA1OjIxICI7MjAxMA=="/>
+        <attribute name="edited" value="QVNVUztBU1VTLVBDOzIwMjAtMTEtMTc7IjEwOjIyOjA2ICI7NDsyMTE1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="absen, tugas, praktikum, UTS, UAS, Nakhir" type="Integer" array="False" size=""/>
+            <declare name="Nabsen, Ntugas, Npraktikum, Nuts, Nuas" type="Real" array="False" size=""/>
+            <output expression="&quot;Jumlah kehadiran =&#13;&#10;(maks 14)&quot;" newline="True"/>
+            <input variable="absen"/>
+            <output expression="&quot;Masukkan nilai rata-rata tugas =&quot;" newline="False"/>
+            <input variable="tugas"/>
+            <output expression="&quot;Masukkan nilai praktikum =&quot;" newline="True"/>
+            <input variable="praktikum"/>
+            <output expression="&quot;Masukkan nilai UTS =&quot;" newline="True"/>
+            <input variable="UTS"/>
+            <output expression="&quot;Masukkan nilai UAS =&quot;" newline="True"/>
+            <input variable="UAS"/>
+            <assign variable="Nabsen" expression="absen/14*10%100"/>
+            <assign variable="Ntugas" expression="tugas*15/100"/>
+            <assign variable="Npraktikum" expression="praktikum*15/100"/>
+            <assign variable="Nuts" expression="UTS*25/100"/>
+            <assign variable="Nuas" expression="UAS*35/100"/>
+            <assign variable="Nakhir" expression="Nabsen+Ntugas+Npraktikum+Nuts+Nuas"/>
+            <output expression="&quot;Nilai akhir = &quot; &amp; Nakhir" newline="True"/>
+            <if expression="Nakhir &gt; 80">
+                <then>
+                    <output expression="&quot;Nilai A&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="Nakhir &gt; 75">
+                        <then>
+                            <output expression="&quot;Nilai A-&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="Nakhir &gt; 71">
+                                <then>
+                                    <output expression="&quot;Nilai B+&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="Nakhir &gt; 67">
+                                        <then>
+                                            <output expression="&quot;Nilai B&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="Nakhir &gt; 63">
+                                                <then>
+                                                    <output expression="&quot;Nilai B-&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="Nakhir &gt; 59">
+                                                        <then>
+                                                            <output expression="&quot;Nilai C+&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="Nakhir &gt; 55">
+                                                                <then>
+                                                                    <output expression="&quot;Nilai C&quot;" newline="True"/>
+                                                                </then>
+                                                                <else>
+                                                                    <if expression="Nakhir &gt; 45">
+                                                                        <then>
+                                                                            <output expression="&quot;Nilai D&quot;" newline="True"/>
+                                                                        </then>
+                                                                        <else>
+                                                                            <if expression="Nakhir &gt; 0">
+                                                                                <then>
+                                                                                    <output expression="&quot;Nilai E&quot;" newline="True"/>
+                                                                                </then>
+                                                                                <else/>
+                                                                            </if>
+                                                                        </else>
+                                                                    </if>
+                                                                </else>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

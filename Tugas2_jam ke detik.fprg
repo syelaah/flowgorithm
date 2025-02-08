@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-10-26 09:36:20 "/>
+        <attribute name="created" value="QVNVUztBU1VTLVBDOzIwMjAtMTAtMjY7IjA5OjMxOjIzICI7MjAxMA=="/>
+        <attribute name="edited" value="QVNVUztBU1VTLVBDOzIwMjAtMTAtMjY7IjA5OjM2OjIwICI7MTsyMTIw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="jam" type="Real" array="False" size=""/>
+            <declare name="menit" type="Real" array="False" size=""/>
+            <declare name="detik" type="Real" array="False" size=""/>
+            <output expression="&quot;masukan jam&quot;" newline="True"/>
+            <input variable="jam"/>
+            <assign variable="menit" expression="jam*60"/>
+            <assign variable="detik" expression="menit*60"/>
+            <output expression="detik&amp;&quot; detik&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

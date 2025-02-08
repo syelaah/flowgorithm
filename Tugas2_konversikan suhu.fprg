@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-10-26 09:18:08 "/>
+        <attribute name="created" value="QVNVUztBU1VTLVBDOzIwMjAtMTAtMjY7IjA4OjM1OjIxICI7MjAxMQ=="/>
+        <attribute name="edited" value="QVNVUztBU1VTLVBDOzIwMjAtMTAtMjY7IjA5OjE4OjA4ICI7MTsyMTI2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="celcius" type="Real" array="False" size=""/>
+            <declare name="fahrenheit" type="Real" array="False" size=""/>
+            <declare name="kelvin" type="Real" array="False" size=""/>
+            <output expression="&quot;masukan suhu dalam celcius&quot;" newline="True"/>
+            <input variable="celcius"/>
+            <assign variable="fahrenheit" expression="(9/5)*celcius+32"/>
+            <output expression="&quot;suhu celcius yang berubah ke fahrenheit adalah &quot;&amp;fahrenheit" newline="True"/>
+            <output expression="&quot;masukan suhu dalam fahrenheit&quot;" newline="True"/>
+            <input variable="fahrenheit"/>
+            <assign variable="kelvin" expression="(5/9)*(fahrenheit-32)-273"/>
+            <output expression="&quot;suhu fahrenheit yang berubah ke kelvin adalah &quot;&amp;kelvin" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

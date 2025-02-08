@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-10-26 09:31:04 "/>
+        <attribute name="created" value="QVNVUztBU1VTLVBDOzIwMjAtMTAtMjY7IjA5OjE4OjE4ICI7MjAxOQ=="/>
+        <attribute name="edited" value="QVNVUztBU1VTLVBDOzIwMjAtMTAtMjY7IjA5OjMxOjA0ICI7MTsyMTE3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="umur" type="Real" array="False" size=""/>
+            <declare name="TL" type="Real" array="False" size=""/>
+            <declare name="TS" type="Real" array="False" size=""/>
+            <output expression="&quot;masukan tahun lahir&quot;" newline="True"/>
+            <input variable="TL"/>
+            <output expression="&quot;masukan tahun sekarang&quot;" newline="True"/>
+            <input variable="TS"/>
+            <assign variable="umur" expression="TS-TL"/>
+            <output expression="&quot;umur &quot;&amp;umur" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

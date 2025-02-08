@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-16 09:03:01 "/>
+        <attribute name="created" value="QVNVUztBU1VTLVBDOzIwMjAtMTEtMTY7IjA4OjU5OjAwICI7MjAxNA=="/>
+        <attribute name="edited" value="QVNVUztBU1VTLVBDOzIwMjAtMTEtMTY7IjA5OjAzOjAxICI7MTsyMTEz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="bilangan" type="Integer" array="False" size=""/>
+            <declare name="hasil" type="Integer" array="False" size=""/>
+            <assign variable="bilangan" expression="4"/>
+            <assign variable="hasil" expression="4^2"/>
+            <output expression="&quot;bilangan 4^2 = &quot; &amp; hasil" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

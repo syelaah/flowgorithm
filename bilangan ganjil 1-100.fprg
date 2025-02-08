@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-16 08:09:15 "/>
+        <attribute name="created" value="QVNVUztBU1VTLVBDOzIwMjAtMTEtMTY7IjA3OjI1OjM4ICI7MjAxNw=="/>
+        <attribute name="edited" value="QVNVUztBU1VTLVBDOzIwMjAtMTEtMTY7IjA4OjA5OjE1ICI7MjsyMTI0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ganjil" type="Integer" array="False" size=""/>
+            <declare name="awal" type="Integer" array="False" size=""/>
+            <declare name="akhir" type="Integer" array="False" size=""/>
+            <assign variable="awal" expression="0"/>
+            <assign variable="akhir" expression="99"/>
+            <for variable="ganjil" start="awal" end="akhir" direction="inc" step="1">
+                <if expression="ganjil%2==1">
+                    <then>
+                        <output expression="ganjil" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
